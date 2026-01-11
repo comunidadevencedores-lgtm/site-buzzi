@@ -13,3 +13,5 @@ app.prepare().then(() => {
     console.log(`> Ready on http://${host}:${port}`);
   });
 });
+Remove custom server (Render only)
+
