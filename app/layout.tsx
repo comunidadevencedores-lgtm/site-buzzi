@@ -34,6 +34,14 @@ export default function RootLayout({
   />
   </head>
       <body>
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-WL5TTGXW"
+      height="0"
+      width="0"
+      style={{ display: "none", visibility: "hidden" }}
+    />
+  </noscript>
         {/* HEADER */}
         <header className="fixed top-0 w-full z-50 bg-black/40 backdrop-blur-md">
           <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
