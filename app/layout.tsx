@@ -1,6 +1,8 @@
 import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
+import Script from "next/script";
+
 
 
 export const metadata = {
@@ -16,6 +18,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17105527964"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17105527964');
+</script>
       <body>
         {/* HEADER */}
         <header className="fixed top-0 w-full z-50 bg-black/40 backdrop-blur-md">
