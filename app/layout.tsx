@@ -33,7 +33,7 @@ export default function RootLayout({
           gtag('js', new Date());
           gtag('config', 'AW-17105527964');
         `,
-      }}
+      }
     />
   </head>
       <body>
