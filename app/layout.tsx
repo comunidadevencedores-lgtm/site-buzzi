@@ -18,15 +18,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17105527964"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17105527964');
-</script>
+  <head>
+    <Script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17105527964"
+    />
+    <Script
+      id="google-ads"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17105527964');
+        `,
+      }}
+    />
+  </head>
       <body>
         {/* HEADER */}
         <header className="fixed top-0 w-full z-50 bg-black/40 backdrop-blur-md">
