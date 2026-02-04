@@ -111,7 +111,7 @@ export default function RootLayout({
   after:transition-all after:duration-300
   hover:after:w-full"
 >
-  Estética
+Estética Dental
 </a>
 <a
   href="/tratamentos/ortodontia"
