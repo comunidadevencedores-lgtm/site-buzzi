@@ -73,7 +73,7 @@ export default function Home() {
 <section
   className="relative min-h-[70vh] flex items-center"
   style={{
-    backgroundImage: "url('/clinica-interna2.jpg')",
+    backgroundImage: "url('/clinica-interna22.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
   }}
