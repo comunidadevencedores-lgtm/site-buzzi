@@ -2,6 +2,7 @@ import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
 import Script from "next/script";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Buzzi Odontologia | Clínica Odontológica em Curitiba",
@@ -160,6 +161,8 @@ export default function RootLayout({
         <footer className="border-t mt-20 py-8 text-center text-sm text-gray-500">
           © {new Date().getFullYear()} Buzzi Odontologia
         </footer>
+
+        <SpeedInsights />
 
         {/* SEO LOCAL */}
         <script
