@@ -132,7 +132,7 @@ export default function RootLayout({
               </Link>
 
               <Link
-                href="https://wa.me/5541995244522"
+                href="https://wa.me/5541995244522?text=Ol%C3%A1%21%20Vim%20pelo%20an%C3%BAncio.%20Podem%20me%20ajudar%3F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-teal-600 hover:bg-teal-700 transition-colors duration-200 text-white px-4 py-2 rounded-md text-lg"
