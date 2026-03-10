@@ -32,21 +32,6 @@ export default function RootLayout({
           }}
         />
 
-         {/* Google Tag Manager */}
-        <Script
-          id="gtm"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-WL5TTGXW');
-            `,
-          }}
-        />
-
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -57,11 +42,10 @@ export default function RootLayout({
           />
         </noscript>
 
-
         {/* HEADER */}
         <header className="fixed top-0 w-full z-50 bg-black/40 backdrop-blur-md">
           <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/logo-buzzi3.png"
                 alt="Buzzi Odontologia - Clínica Odontológica em Curitiba"
@@ -69,10 +53,10 @@ export default function RootLayout({
                 height={100}
                 priority
               />
-            </a>
+            </Link>
 
             <div className="flex gap-6 items-center">
-              
+              <Link
                 href="/"
                 className="relative text-sm font-medium
                 text-white/90
@@ -85,8 +69,9 @@ export default function RootLayout({
                 hover:after:w-full"
               >
                 Início
-              </a>
-              
+              </Link>
+
+              <Link
                 href="/sobre"
                 className="relative text-sm font-medium
                 text-white/90
@@ -99,8 +84,9 @@ export default function RootLayout({
                 hover:after:w-full"
               >
                 Sobre
-              </a>
-              
+              </Link>
+
+              <Link
                 href="/tratamentos/implantes"
                 className="relative text-sm font-medium
                 text-white/90
@@ -113,8 +99,9 @@ export default function RootLayout({
                 hover:after:w-full"
               >
                 Implantes
-              </a>
-              
+              </Link>
+
+              <Link
                 href="/tratamentos/estetica"
                 className="relative text-sm font-medium
                 text-white/90
@@ -127,8 +114,9 @@ export default function RootLayout({
                 hover:after:w-full"
               >
                 Estética Dental
-              </a>
-              
+              </Link>
+
+              <Link
                 href="/tratamentos/ortodontia"
                 className="relative text-sm font-medium
                 text-white/90
@@ -141,15 +129,16 @@ export default function RootLayout({
                 hover:after:w-full"
               >
                 Ortodontia
-              </a>
-              
+              </Link>
+
+              <Link
                 href="https://wa.me/5541995244522"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-teal-600 hover:bg-teal-700 transition-colors duration-200 text-white px-4 py-2 rounded-md text-lg"
               >
                 Agendar
-              </a>
+              </Link>
             </div>
           </nav>
         </header>
