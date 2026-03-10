@@ -30,7 +30,7 @@ export default function Home() {
               </p>
 
               <a
-                href="https://wa.me/5541995244522"
+                href="https://wa.me/5541995244522?text=Ol%C3%A1%21%20Vim%20pelo%20an%C3%BAncio.%20Podem%20me%20ajudar%3F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-md text-lg transition"
