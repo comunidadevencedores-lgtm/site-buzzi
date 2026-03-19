@@ -19,7 +19,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
-        {/* Google Tag Manager */}
         <Script
           id="gtm"
           strategy="afterInteractive"
@@ -34,7 +33,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-WL5TTGXW"
@@ -44,7 +42,6 @@ export default function RootLayout({
           />
         </noscript>
 
-        {/* HEADER */}
         <header className="fixed top-0 w-full z-50 bg-black/40 backdrop-blur-md">
           <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
             <Link href="/" className="flex items-center">
@@ -58,81 +55,21 @@ export default function RootLayout({
             </Link>
 
             <div className="flex gap-6 items-center">
-              <Link
-                href="/"
-                className="relative text-sm font-medium
-                text-white/90
-                hover:text-teal-400
-                transition
-                after:content-['']
-                after:absolute after:left-0 after:-bottom-1
-                after:h-[2px] after:w-0 after:bg-teal-400
-                after:transition-all after:duration-300
-                hover:after:w-full"
-              >
+              <Link href="/" className="relative text-sm font-medium text-white/90 hover:text-teal-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-teal-400 after:transition-all after:duration-300 hover:after:w-full">
                 Início
               </Link>
-
-              <Link
-                href="/sobre"
-                className="relative text-sm font-medium
-                text-white/90
-                hover:text-teal-400
-                transition
-                after:content-['']
-                after:absolute after:left-0 after:-bottom-1
-                after:h-[2px] after:w-0 after:bg-teal-400
-                after:transition-all after:duration-300
-                hover:after:w-full"
-              >
+              <Link href="/sobre" className="relative text-sm font-medium text-white/90 hover:text-teal-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-teal-400 after:transition-all after:duration-300 hover:after:w-full">
                 Sobre
               </Link>
-
-              <Link
-                href="/tratamentos/implantes"
-                className="relative text-sm font-medium
-                text-white/90
-                hover:text-teal-400
-                transition
-                after:content-['']
-                after:absolute after:left-0 after:-bottom-1
-                after:h-[2px] after:w-0 after:bg-teal-400
-                after:transition-all after:duration-300
-                hover:after:w-full"
-              >
+              <Link href="/tratamentos/implantes" className="relative text-sm font-medium text-white/90 hover:text-teal-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-teal-400 after:transition-all after:duration-300 hover:after:w-full">
                 Implantes
               </Link>
-
-              <Link
-                href="/tratamentos/estetica"
-                className="relative text-sm font-medium
-                text-white/90
-                hover:text-teal-400
-                transition
-                after:content-['']
-                after:absolute after:left-0 after:-bottom-1
-                after:h-[2px] after:w-0 after:bg-teal-400
-                after:transition-all after:duration-300
-                hover:after:w-full"
-              >
+              <Link href="/tratamentos/estetica" className="relative text-sm font-medium text-white/90 hover:text-teal-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-teal-400 after:transition-all after:duration-300 hover:after:w-full">
                 Estética Dental
               </Link>
-
-              <Link
-                href="/tratamentos/ortodontia"
-                className="relative text-sm font-medium
-                text-white/90
-                hover:text-teal-400
-                transition
-                after:content-['']
-                after:absolute after:left-0 after:-bottom-1
-                after:h-[2px] after:w-0 after:bg-teal-400
-                after:transition-all after:duration-300
-                hover:after:w-full"
-              >
+              <Link href="/tratamentos/ortodontia" className="relative text-sm font-medium text-white/90 hover:text-teal-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-teal-400 after:transition-all after:duration-300 hover:after:w-full">
                 Ortodontia
               </Link>
-
               <Link
                 href="https://wa.me/5541995244522?text=Ol%C3%A1%21%20Vim%20pelo%20an%C3%BAncio.%20Podem%20me%20ajudar%3F"
                 target="_blank"
@@ -147,13 +84,9 @@ export default function RootLayout({
 
         {children}
 
-        {/* FOOTER */}
         <Footer />
-
-        {/* WHATSAPP FLUTUANTE */}
         <WhatsAppFloat />
 
-        {/* SEO LOCAL */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
