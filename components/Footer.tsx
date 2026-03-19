@@ -1,7 +1,7 @@
 const WHATSAPP_URL = "https://wa.me/message/SH4G65OK6NKWB1";
-const INSTAGRAM_URL = "https://www.instagram.com/buzzlodonto/";
+const INSTAGRAM_URL = "https://www.instagram.com/buzziodonto/";
 const FACEBOOK_URL = "https://www.facebook.com/odontobuzzirocha";
-const LINKEDIN_URL = "https://www.linkedin.com/company/buzzi-odont";
+const LINKEDIN_URL = "https://www.linkedin.com/company/buzzi-odonto";
 
 const NAV_LINKS = [
   { href: "/", label: "Início" },
