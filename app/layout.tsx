@@ -2,6 +2,8 @@ import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
 import Script from "next/script";
+import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export const metadata = {
   title: "Buzzi Odontologia | Clínica Odontológica em Curitiba",
@@ -146,9 +148,10 @@ export default function RootLayout({
         {children}
 
         {/* FOOTER */}
-        <footer className="border-t mt-20 py-8 text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} Buzzi Odontologia
-        </footer>
+        <Footer />
+
+        {/* WHATSAPP FLUTUANTE */}
+        <WhatsAppFloat />
 
         {/* SEO LOCAL */}
         <script
