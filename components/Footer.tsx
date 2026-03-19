@@ -1,24 +1,23 @@
-const WHATSAPP_URL = 'https://wa.me/message/SH4G65OK6NKWB1'
-const INSTAGRAM_URL = 'https://www.instagram.com/buzzlodonto/'
-const FACEBOOK_URL = 'https://www.facebook.com/odontobuzzirocha'
-const LINKEDIN_URL = 'https://www.linkedin.com/company/buzzi-odont'
+const WHATSAPP_URL = "https://wa.me/message/SH4G65OK6NKWB1";
+const INSTAGRAM_URL = "https://www.instagram.com/buzzlodonto/";
+const FACEBOOK_URL = "https://www.facebook.com/odontobuzzirocha";
+const LINKEDIN_URL = "https://www.linkedin.com/company/buzzi-odont";
 
 const NAV_LINKS = [
-  { href: '/', label: 'Início' },
-  { href: '/sobre', label: 'Sobre' },
-  { href: '/tratamentos', label: 'Tratamentos' },
-  { href: '/contato', label: 'Contato' },
-]
+  { href: "/", label: "Início" },
+  { href: "/sobre", label: "Sobre" },
+  { href: "/tratamentos", label: "Tratamentos" },
+  { href: "/contato", label: "Contato" },
+];
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="relative border-t border-gray-200 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 items-start">
 
-          {/* Brand */}
           <div>
             <p className="font-semibold text-gray-800 text-lg mb-3">Buzzi Odontologia</p>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
@@ -26,16 +25,14 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Navigation */}
           <div>
             <h4 className="text-gray-800 text-xs font-semibold tracking-widest uppercase mb-4">
               Navegação
             </h4>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href}
-                    className="text-gray-500 text-sm hover:text-gray-900 transition-colors duration-300">
+                  <a href={link.href} className="text-gray-500 text-sm hover:text-gray-900 transition-colors duration-300">
                     {link.label}
                   </a>
                 </li>
@@ -43,14 +40,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social */}
           <div>
             <h4 className="text-gray-800 text-xs font-semibold tracking-widest uppercase mb-4">
               Redes Sociais
             </h4>
             <div className="flex items-center gap-3">
 
-              {/* WhatsApp */}
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
                 className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:text-green-500 hover:border-green-400 transition-all duration-300">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -58,7 +53,6 @@ export default function Footer() {
                 </svg>
               </a>
 
-              {/* Instagram */}
               <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram"
                 className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:text-pink-500 hover:border-pink-400 transition-all duration-300">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -66,7 +60,6 @@ export default function Footer() {
                 </svg>
               </a>
 
-              {/* Facebook */}
               <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Facebook"
                 className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:text-blue-600 hover:border-blue-500 transition-all duration-300">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -74,18 +67,17 @@ export default function Footer() {
                 </svg>
               </a>
 
-              {/* LinkedIn */}
               <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
                 className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:text-blue-700 hover:border-blue-600 transition-all duration-300">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
               </a>
+
             </div>
           </div>
         </div>
 
-        {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-400 text-xs">
             &copy; {currentYear} Buzzi Odontologia. Todos os direitos reservados.
@@ -93,5 +85,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+} 
