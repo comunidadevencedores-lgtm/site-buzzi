@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://site-buzzi.vercel.app/sitemap.xml',
+    sitemap: 'https://www.buzziodontologia.com.br/sitemap.xml',
   }
 }
