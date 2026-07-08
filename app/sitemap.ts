@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://site-buzzi.vercel.app'
+  const baseUrl = 'https://www.buzziodontologia.com.br'
 
   return [
     {
