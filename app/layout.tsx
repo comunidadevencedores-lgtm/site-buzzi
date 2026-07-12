@@ -4,7 +4,31 @@ import Link from "next/link";
 import Script from "next/script";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import Script from 'next/script';
 
+export default function RootLayout({ children }) {
+  return (
+    <html lang="pt-BR">
+      <head>
+        {/* Google Tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Z63QWHC4ZC"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-Z63QWHC4ZC');
+          `}
+        </Script>
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}
 export const metadata = {
   title: "Buzzi Odontologia | Clínica Odontológica em Curitiba",
   description:
