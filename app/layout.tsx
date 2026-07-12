@@ -4,13 +4,22 @@ import Link from "next/link";
 import Script from "next/script";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
-import Script from 'next/script';
 
-export default function RootLayout({ children }) {
+export const metadata = {
+  title: "Buzzi Odontologia | Clínica Odontológica em Curitiba",
+  description:
+    "Clínica odontológica em Curitiba especializada em implantes, estética dental e ortodontia com atendimento humanizado.",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="pt-BR">
       <head>
-        {/* Google Tag (gtag.js) */}
+        {/* Google Analytics (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Z63QWHC4ZC"
           strategy="afterInteractive"
@@ -25,24 +34,8 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body>{children}</body>
-    </html>
-  );
-}
-export const metadata = {
-  title: "Buzzi Odontologia | Clínica Odontológica em Curitiba",
-  description:
-    "Clínica odontológica em Curitiba especializada em implantes, estética dental e ortodontia com atendimento humanizado.",
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="pt-BR">
       <body>
+        {/* Google Tag Manager (GTM) */}
         <Script
           id="gtm"
           strategy="afterInteractive"
